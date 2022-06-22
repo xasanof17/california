@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --card: #f8f9fa;
+  --darkGreen: #dce5e2;
+  --gray: #4b4b4b;
+}
+::selection {
+  color: var(--card);
+  background: var(--black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  outline: none;
+  border: none;
+}
+img {
+  user-select: none;
+  touch-action: manipulation;
+}
+
+body {
+  font-family: "Readex Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  width: 3%;
+}
+.carousel-control-prev-icon {
+  background-image: url("./assets/arrowLeft.svg");
+}
+.carousel-control-next-icon {
+  background-image: url("./assets/arrowRight.svg");
+}
+
+.carousel{
+  background: var(--darkGreen);
+  border-radius: 50px;
+}
+.carousel-item {
+  background: var(--darkGreen) !important;
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.carousel-inner{
+  padding: 20px 40px;
+}
+@media (max-width: 768px) {
+  h2{
+    font-size: 40px !important;
+  }
+  .carousel-inner{
+    padding: 40px 40px;
+  } 
+}
+@media (max-width: 425px) {
+  h2{
+    font-size: 27px !important;
+    text-align: center !important;
+  }
+  .carousel-inner{
+    padding: 40px 40px;
+  } 
+}
